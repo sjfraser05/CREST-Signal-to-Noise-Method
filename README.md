@@ -35,12 +35,10 @@ Follow this procedure to prepare a Raman system for the test:
 3.	If using an immersion probe, make sure the material is in contact with the probe. Make sure that the probe tip is at least 1 cm away (and ideally 3 to 5 cm away) from the sides and bottom of the container to avoid spectral contamination. A stainless steel container is recommended rather than glass or plastic, as stainless steel has the lowest Raman background signature.
 4.	If using a non-contact probe, focus the probe beam upon the material and adjust the position of the probe or container to get the strongest Raman signal of material with a minimum of interference from the container. For best results, aim the probe downwards upon the top surface of the IPA, not through the sides of a transparent container.
 5.	Take steps to eliminate ambient light contamination. A light-tight sample chamber is the best method to isolate the sample from ambient or background light sources, but aluminum foil, black cloth, or turning out all lights in the room are also adequate as long as they fully suppress the ambient light.
-   
-## Data acquisition
-1.	Set the exposure time and number of averages/accumulations so that the total integration time per spectrum is consistent between instruments.
-2.	Set the number of collected spectra to at least 100, and configure the software to write those spectra to disk files or other storage medium. The spectra can all be written to a single file, or each spectrum to an individual file, whichever is easier for the postprocessing analysis. Write each spectrum to an individual file, one spectrum per file, with SPC output format. If CSV, then ensure the csv file format has the x-coordinates in the first column and y-coordinates in the second column.
-3.	Turn on dark/background subtraction. Turn on cosmic ray filtering if that is available and will not increase the total integration time.
-4.	Start the data acquisition sequence and permit it to run to completion.
+6.	Set the exposure time and number of averages/accumulations so that the total integration time per spectrum is consistent between instruments.
+7.	Set the number of collected spectra to at least 100, and configure the software to write those spectra to disk files or other storage medium. The spectra can all be written to a single file, or each spectrum to an individual file, whichever is easier for the postprocessing analysis. Write each spectrum to an individual file, one spectrum per file, with SPC output format. If CSV, then ensure the csv file format has the x-coordinates in the first column and y-coordinates in the second column.
+8.	Turn on dark/background subtraction. Turn on cosmic ray filtering if that is available and will not increase the total integration time.
+9.	Start the data acquisition sequence and permit it to run to completion.
 
 
 ## Data analysis
