@@ -27,14 +27,7 @@ There are several approaches to calculating SNR, not all of which are valid for 
 
 ## Rationale
 
-The CREST test was designed to meet the following requirements:
-
-- Accurately represent the quantitative measurement precision of any Raman system
-- Test a representative range of exposure time and Raman scattering cross section
-- Be independent of spectrometer design factors like dispersion and pixel size
-- Be independent of the spectroscopic calibration or gain setting of the analyzer
-- Provide a way to separate spectrometer and detector noise from laser variation noise
-- Employ a univariate analysis algorithm as a simplest common denominator and evaluate the instrumentation itself rather than including complex multivariate processing steps
+The CREST method detailed in this technical note is designed to meet specific requirements, including accurately representing quantitative measurement precision and being independent of spectrometer design factors, calibration settings, and camera gain settings. The test procedure only requires a single Raman-active analyte such as isopropyl alcohol, cyclohexane, or polystyrene. The data analysis procedure, detailed below, is straightforward, deterministic (free from subjective judgments), and captures most sources of noise that can impact the precision of a process Raman measurement. Users can easily perform this test on any Raman system, facilitating direct quantitative comparisons across spectrometers.
 
 ## Data Acquisition
 
@@ -48,7 +41,7 @@ Follow this procedure to prepare a Raman system for the test:
 4.	If using a non-contact probe, focus the probe beam upon the material and adjust the position of the probe or container to get the strongest Raman signal of material with a minimum of interference from the container. For best results, aim the probe downwards upon the top surface of the IPA, not through the sides of a transparent container.
 5.	Take steps to eliminate ambient light contamination. A light-tight sample chamber is the best method to isolate the sample from ambient or background light sources, but aluminum foil, black cloth, or turning out all lights in the room are also adequate as long as they fully suppress the ambient light.
 6.	Set the exposure time and number of averages/accumulations so that the total integration time per spectrum is consistent between instruments.
-7.	Set the number of collected spectra to at least 100, and configure the software to write those spectra to disk files or other storage medium. The spectra can all be written to a single file, or each spectrum to an individual file, whichever is easier for the postprocessing analysis. Write each spectrum to an individual file, one spectrum per file, with SPC output format. If CSV, then ensure the csv file format has the x-coordinates in the first column and y-coordinates in the second column.
+7.	Set the number of collected spectra to at least 50, and configure the software to write those spectra to disk files or other storage medium. The spectra can all be written to a single file, or each spectrum to an individual file, whichever is easier for the postprocessing analysis. Write each spectrum to an individual file, one spectrum per file, with SPC output format. If CSV, then ensure the csv file format has the x-coordinates in the first column and y-coordinates in the second column.
 8.	Turn on dark/background subtraction. Turn on cosmic ray filtering if that is available and will not increase the total integration time.
 9.	Start the data acquisition sequence and permit it to run to completion.
 
