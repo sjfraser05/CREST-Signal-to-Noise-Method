@@ -12,11 +12,17 @@ This need is underscored by the observation that Raman vendors often describe th
 While the most comprehensive analyzer evaluation involves collecting numerous spectra and building multivariate chemometric models, this approach demands significant effort and may be impractical for initial assessments. An efficient alternative quality indicator for Raman instrumentation is the Signal-to-Noise Ratio (SNR). SNR serves as a robust indicator of quantitative measurement precision and sensitivity, as it represents the relationship between the average chemical measurement value (the signal) and the variation or uncertainty in that measurement value (the noise). An analyzer with a higher SNR will deliver more precise chemical measurements and will be able to detect trace constituents of a mixture with better sensitivity. 
 
 There are several approaches to calculating SNR, not all of which are valid for quantitative Raman spectroscopy. Some of the more common methods include: 
+
 1.	Exposure Time to Saturate Spectrometer Camera:
+
 •	This method involves determining the time required for the spectrometer camera to reach saturation while measuring a standard analyte. While it provides an indication of the camera's dynamic range, it is less effective for quantifying the instrument's precision and sensitivity, as it focuses on a specific parameter (saturation time) and does not capture other relevant noise variations like photon shot noise and laser power variations. This approach is not recommended for comparing instruments from multiple vendors, as customers can easily be misled by analyzer detectors with high gain settings which artificially amplify the signal.
+
 2.	Raman Peak Height Divided by Background Signal:
+
 •	The Raman peak height divided by the background signal is a straightforward method that assesses the ratio of the signal strength to the underlying background noise in the spectrum. While it offers a quick evaluation, this approach can severely  oversimplify the analysis by focusing solely on background noise without considering other factors which also add noise (uncertainty) to the peak measurement. It may be less robust for comprehensive assessments of quantitative precision, and will often significantly underestimate the actual measurement noise.
+
 3.	CREST - Chemometrically Relevant Empirical Spectral Test:
+   
 •	This method involves collecting multiple “replicate” spectral measurements of a single analyte, subtracting a linear baseline from the Raman peak, making a univariate peak area measurement of each spectrum, and calculating the average and standard deviation of these peak area measurements.  This method is considered more robust and more accurate than other methods mentioned previously, as it accounts for most sources of noise which can impact the precision of a process Raman measurement, is straightforward to calculate, and can be used to compare across vendor instruments without requiring a priori knowledge of the details of the instrument hardware. 
 
 ## Rationale
